@@ -5,7 +5,7 @@ public class LetterGrade
 {
     public static void main(String[] args)
     {
-        int lettergrade;
+        String lettergrade;
 
         System.out.println("Please enter your grade : ");
         Scanner scan = new Scanner(System.in);
@@ -14,32 +14,48 @@ public class LetterGrade
 
         // if grade >= 90, set the letterGrade to A
 
-        if(grade >=90){
-            lettergrade = 'A';
+        if (grade >= 95){
+        lettergrade = "A+";
+        }
+
+        else if(grade >=90){
+            lettergrade = "A";
         }
 
         // if grade >=80 set the letterGrade to B
 
+        else if (grade >= 85){
+        lettergrade = "B+";
+        }
+
          else if (grade >= 80){
-        lettergrade = 'B';
+        lettergrade = "B";
         }
 
         // if grade >=70 set the letterGrade to C
 
+        else if (grade >= 75){
+        lettergrade = "C+";
+        }
+
         else if (grade >= 70){
-        lettergrade = 'C';
+        lettergrade = "C";
         }
 
         // if grade >=60 set the letterGrade to D
 
+        else if (grade >= 65){
+        lettergrade = "D+";
+        }
+
         else if (grade >= 60){
-        lettergrade = 'D';
+        lettergrade = "D";
         }
 
         //else set the letterGrade to F
 
         else {
-        lettergrade ='F';
+        lettergrade ="F";
         }
             System.out.println("The Final Grade is : "+ lettergrade);
     }//main
